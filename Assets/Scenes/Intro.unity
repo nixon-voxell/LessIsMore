@@ -184,15 +184,15 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8b754e21b5f360845b125a24c3aa4501, type: 2}
-  m_sharedMaterial: {fileID: 8069440269098197436, guid: 8b754e21b5f360845b125a24c3aa4501, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}
+  m_sharedMaterial: {fileID: 7783637436224785758, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278255389
+  m_fontColor: {r: 0.11250341, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -446,21 +446,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 297404982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da34d200584ccd24f80d56d77728b057, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a272363275b29e4c9fd5be2f3bc5f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1957547688}
   proceed: {fileID: 2098572950}
-  lines: 7
+  lines: 6
   storyLine:
-  - IT'S THE ZOMBIE APPOCALYPSE ! HUMANITY IS IN THREAT !
-  - YOU ARE THE ONLY HOPE OF THE HUMAN RACE.
-  - YOU FOUND ONE LAB WHERE ALL REMAINING ZOMBIES ARE LEFT.
-  - BUT YOU ONLY HAVE 6 BULLETS LEFT IN YOUR REVOLVER...
-  - THERE ARE SIX LEVELS OF BASEMENT IN THIS LAB.
-  - ZOMBIES ARE HIGHLY INFECTIOUS ! DO NOT LET THEM TOUCH YOU !
-  - USE YOUR BULLET WISELY TO WIN THE GAME !
-  - GOOD LUCK !
+  - 'IT''S THE ZOMBIE APOCALYSE !
+
+    HUMANITY IS THREATEN !'
+  - YOU ARE THE ONLY ONE HOPE LEFT FOR HUMANITY.
+  - YOU FOUND A LAB WHERE ALL REMAINING ZOMBIES ARE SITUATED.
+  - BUT YOU ONLY HAVE 6 BULLETS IN YOUR REVOLOVER. YOUR GUN IS STRONG ENOUGH TO PIERCE
+    ALL ZOMBIES WITH JUST ONE BULLET.
+  - THE LAB HAS 6 LEVELS OF BASEMENT.
+  - THE ZOMBIES ARE HIGHLY INFECTIOUS. DO NOT LET THEM TOUCH YOU.
+  - USE ALL THE SIX BULLETS WISELY. GOOD LUCK !
 --- !u!1 &423788613
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +707,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 297404987}
-        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_TargetAssemblyTypeName: Storyline, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -1176,15 +1178,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8b754e21b5f360845b125a24c3aa4501, type: 2}
-  m_sharedMaterial: {fileID: 8069440269098197436, guid: 8b754e21b5f360845b125a24c3aa4501, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}
+  m_sharedMaterial: {fileID: 7783637436224785758, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278255361
+  m_fontColor: {r: 0.0047392845, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1449,7 +1451,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 297404987}
-        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_TargetAssemblyTypeName: Storyline, Assembly-CSharp
         m_MethodName: GameOn
         m_Mode: 1
         m_Arguments:
@@ -1963,7 +1965,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 246}
-  m_SizeDelta: {x: 1089.8997, y: 380.4666}
+  m_SizeDelta: {x: 1100, y: 380.4666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1824607050
 MonoBehaviour:
@@ -1987,8 +1989,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GAME NAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8b754e21b5f360845b125a24c3aa4501, type: 2}
-  m_sharedMaterial: {fileID: 8069440269098197436, guid: 8b754e21b5f360845b125a24c3aa4501, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}
+  m_sharedMaterial: {fileID: 7783637436224785758, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2012,8 +2014,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2281,7 +2283,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 297404987}
-        m_TargetAssemblyTypeName: SceneControl, Assembly-CSharp
+        m_TargetAssemblyTypeName: Storyline, Assembly-CSharp
         m_MethodName: nextText
         m_Mode: 1
         m_Arguments:

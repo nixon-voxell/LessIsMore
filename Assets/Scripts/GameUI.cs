@@ -9,7 +9,7 @@ public class GameUI : MonoBehaviour
   public TextMeshProUGUI levelText;
   
   public int level = 1;
-
+  
   void Update()
   {
     levelText.text = $"LEVEL :  {level}";
@@ -19,11 +19,10 @@ public class GameUI : MonoBehaviour
       else bullet[i].enabled = false;
     }
 
-    if(GunMec.bulletCount ==0)
+    if(GunMec.bulletCount == 0)
     {
       gameoverUI.SetActive(true);
     }
 
-    
   }
 }

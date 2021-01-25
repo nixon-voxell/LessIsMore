@@ -28,13 +28,14 @@ public class PlayerMovement : MonoBehaviour
     
     if(horizontal != 0)
     {
-      animator.SetFloat("speed", Mathf.Abs(horizontal));
+      animator.SetFloat("speed", horizontal);
     }
     else if(vertical != 0)
     {
-      animator.SetFloat("speed", Mathf.Abs(vertical));
+      animator.SetFloat("speed", vertical);
     }
 
-    
+    //contact with zombies 
+    // map boundaries
   }  
 }

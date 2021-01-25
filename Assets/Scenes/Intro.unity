@@ -456,12 +456,12 @@ MonoBehaviour:
   - 'IT''S THE ZOMBIE APOCALYSE !
 
     HUMANITY IS THREATEN !'
-  - YOU ARE THE ONLY ONE HOPE LEFT FOR HUMANITY.
-  - YOU FOUND A LAB WHERE ALL REMAINING ZOMBIES ARE SITUATED.
-  - BUT YOU ONLY HAVE 6 BULLETS IN YOUR REVOLOVER. YOUR GUN IS STRONG ENOUGH TO PIERCE
-    ALL ZOMBIES WITH JUST ONE BULLET.
-  - THE LAB HAS 6 LEVELS OF BASEMENT.
-  - THE ZOMBIES ARE HIGHLY INFECTIOUS. DO NOT LET THEM TOUCH YOU.
+  - YOU ARE THE ONLY ONE HOPE LEFT FOR HUMANITY...
+  - YOU FOUND A LAB WHERE ALL REMAINING ZOMBIES ARE SITUATED...
+  - BUT YOU ONLY HAVE 6 BULLETS IN YOUR REVOLVER. YOUR GUN IS STRONG ENOUGH TO PIERCE
+    ALL ZOMBIES WITH JUST ONE BULLET...
+  - THE LAB HAS 6 LEVELS OF BASEMENT. THE  LOWER THE BASEMENT, THE HARDER LEVEL...
+  - THE ZOMBIES ARE HIGHLY INFECTIOUS. DO NOT HAVE ANY CONTACTS WITH THEM...
   - USE ALL THE SIX BULLETS WISELY. GOOD LUCK !
 --- !u!1 &423788613
 GameObject:
@@ -1078,7 +1078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 179, y: -0}
+  m_AnchoredPosition: {x: 119, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050350868
@@ -1403,8 +1403,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 668, y: -427}
-  m_SizeDelta: {x: 721.9352, y: 108.1022}
+  m_AnchoredPosition: {x: 737, y: -494}
+  m_SizeDelta: {x: 495.3737, y: 88.9562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404740320
 MonoBehaviour:
@@ -1814,7 +1814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: 0}
+  m_AnchoredPosition: {x: 119, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723792190
@@ -2235,8 +2235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 668, y: -211}
-  m_SizeDelta: {x: 721.9352, y: 108.1022}
+  m_AnchoredPosition: {x: 734, y: -356}
+  m_SizeDelta: {x: 396.4528, y: 85.7652}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098572952
 MonoBehaviour:

@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     rb.AddForce(new Vector3(0, vertical, 0));
     rb.AddForce(new Vector3(horizontal, 0, 0));
     
-    animator.SetFloat("speed", Mathf.Abs(horizontal) + Mathf.Abs(vertical));
+    animator.SetFloat("speed", rb.velocity.magnitude);
 
     //contact with zombies 
     // map boundaries

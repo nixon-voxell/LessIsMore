@@ -23,7 +23,12 @@ public class PlayerMovement : MonoBehaviour
     rb.AddForce(new Vector3(0, vertical, 0));
     rb.AddForce(new Vector3(horizontal, 0, 0));
     
-    animator.SetFloat("speed", rb.velocity.magnitude);
+    animator.SetFloat("speed", Mathf.Max(rb.velocity.magnitude, 1.0f));
+
+    if (Input.GetKeyDown(KeyCode.Space))
+    {
+      // perform dash
+    }
 
     //contact with zombies 
     // map boundaries

@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletMovement : MonoBehaviour
+public class bulletmovement : MonoBehaviour
 {
-  // add blood splash effect
-  // zombies becomes faster when there is no bullet left
-  // Collision with zombies
-
+  public GameObject prefab;
+  void OnBecameInvisible()
+  {
+    Destroy(gameObject);
+  }
 }

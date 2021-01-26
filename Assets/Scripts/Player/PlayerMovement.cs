@@ -26,6 +26,13 @@ public class PlayerMovement : MonoBehaviour
 
       animator.SetFloat("speed", rb.velocity.magnitude);
     }
+    
+    animator.SetFloat("speed", Mathf.Max(rb.velocity.magnitude, 1.0f));
+
+    if (Input.GetKeyDown(KeyCode.Space))
+    {
+      // perform dash
+    }
 
     // how does this work wtf
     if(Mathf.Abs(horizontal) + Mathf.Abs(vertical) == 0f)

@@ -2195,8 +2195,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823370135}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -955.1, y: -540.87, z: -2.392248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 486948158}
@@ -2457,7 +2457,7 @@ MonoBehaviour:
   horizontal: 0
   vertical: 0
   animator: {fileID: 2000833013}
-  movementMultiplier: 0.5
+  movementMultiplier: 2
   rb: {fileID: 0}
 --- !u!1 &2094989786
 GameObject:

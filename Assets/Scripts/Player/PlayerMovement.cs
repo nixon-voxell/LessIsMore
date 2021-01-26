@@ -13,10 +13,7 @@ public class PlayerMovement : MonoBehaviour
   [HideInInspector]
   public Rigidbody2D rb;
   // Start is called before the first frame update
-  void Start()
-  {
-    rb = GetComponent<Rigidbody2D>();
-  }
+  void Start() => rb = GetComponent<Rigidbody2D>();
 
   // Update is called once per frame
   void Update()
@@ -26,14 +23,7 @@ public class PlayerMovement : MonoBehaviour
     rb.AddForce(new Vector3(0, vertical, 0));
     rb.AddForce(new Vector3(horizontal, 0, 0));
     
-    if(horizontal != 0)
-    {
-      animator.SetFloat("speed", horizontal);
-    }
-    else if(vertical != 0)
-    {
-      animator.SetFloat("speed", vertical);
-    }
+    animator.SetFloat("speed", Mathf.Abs(horizontal) + Mathf.Abs(vertical));
 
     //contact with zombies 
     // map boundaries

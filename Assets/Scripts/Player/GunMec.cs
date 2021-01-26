@@ -18,14 +18,15 @@ public class GunMec : MonoBehaviour
   void Update()
   {
     // moving hand based on mouse
-    Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    Vector2 mousePos = mouseWorldPos - new Vector2(transform.position.x, transform.position.y);
     float pointAngle = Mathf.Atan2(mousePos.y, mousePos.x)* Mathf.Rad2Deg;
     arm.transform.rotation = Quaternion.Euler(0, 0, pointAngle);
 
-    cursor.transform.position = new Vector3(mousePos.x, mousePos.y, 0);
+    cursor.transform.position = mouseWorldPos;
 
       // right0, up90, left180/-180, down-90;
-    if(pointAngle >=90 || pointAngle <=-90)
+    if(pointAngle >= 90 || pointAngle <= -90)
       {
         transform.eulerAngles = new Vector3(0, 180, 0);
         mousePos.x = -mousePos.x; //fix flipping bug

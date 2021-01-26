@@ -10,15 +10,13 @@ public class GunMec : MonoBehaviour
   public GameObject arm;
   public KeyCode shoot = KeyCode.Mouse0;
   public PlayerMovement movement;
-  
+  public ParticleSystem firing;
   void Start()
   {
     bulletCount = 6;
   }
   void Update()
   {
-    // moving hand based on mouse
-
     // mouse point in world position
     Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     // mouse point relative to player
@@ -45,6 +43,8 @@ public class GunMec : MonoBehaviour
       Rigidbody2D bullets;
       bullets = Instantiate(bulletPrefab, firepoint.position, Quaternion.Euler(0, 0, pointAngle));
       bullets.velocity = transform.TransformDirection(mousePos.normalized)*bulletspeed;
+      //shooting effect
+      Destroy(Instantiate(firing, firepoint.position, Quaternion.identity),5f);
     }
 
   }

@@ -40,8 +40,9 @@ public class EnemyMove : MonoBehaviour
   {
     if(col.gameObject.tag == "bullet")
     {
-      // die animation
+      SoundManager.PlaySE("zombieDie");
       Destroy(gameObject);
+      // die animation
     }
   }
 }

@@ -12,29 +12,37 @@ public class PlayerMovement : MonoBehaviour
   public Rigidbody2D rb;
   // Start is called before the first frame update
   void Start() => rb = GetComponent<Rigidbody2D>();
-
+  // public bool moving = false;
+  bool infected = false;
   // Update is called once per frame
   void Update()
   {
-    if(GunMec.bulletCount >0)
+    if(GunMec.bulletCount > 0)
     {
     horizontal = Input.GetAxis("Horizontal")*movementMultiplier;
     vertical = Input.GetAxis("Vertical")*movementMultiplier;
     rb.AddForce(new Vector3(0, vertical, 0));
     rb.AddForce(new Vector3(horizontal, 0, 0));
-    }
-    
-    animator.SetFloat("speed", rb.velocity.magnitude);
 
-    // map boundaries
+      animator.SetFloat("speed", rb.velocity.magnitude);
+    }
+
+    // how does this work wtf
+    if(Mathf.Abs(horizontal) + Mathf.Abs(vertical) == 0f)
+      {
+        SoundManager.PlaySE("walking");
+      }
+    //map boundaries
   }
 
   void OnCollisionEnter2D(Collision2D col)
   {
-    if(col.gameObject.tag == "enemy")
+    if(col.gameObject.tag == "enemy" && infected == false)
     {
       //game over
       GunMec.bulletCount = 0;
+      infected = true;
+      if(infected)SoundManager.PlaySE("zombieBite");
     }
   }
 }

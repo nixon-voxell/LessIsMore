@@ -23,24 +23,30 @@ public class EnemyMove : MonoBehaviour
     // convert coords to angle against player
     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
     direction.Normalize(); //direction of enemy to player
-    rd.MovePosition(transform.position + (direction* movespeed* Time.deltaTime));
 
-    if(direction.x <0) // left
+    if(PlayerMovement.danger)
     {
-      transform.eulerAngles = new Vector3(0, 180, 0);
-    }else transform.eulerAngles = Vector3.zero;
+      rd.MovePosition(transform.position + (direction* movespeed* Time.deltaTime));
 
-    //zombies goes crazy when bulletCount is zero
-    if(GunMec.bulletCount <=0)
-    {
-      movespeed = 30;
+      zombieSM.ZplaySE("zombieGroan");
+      if(direction.x <0) // left
+      {
+        transform.eulerAngles = new Vector3(0, 180, 0);
+      }else transform.eulerAngles = Vector3.zero;
+
+      //zombies goes crazy when bulletCount is zero
+      if(GunMec.bulletCount <=0)
+      {
+        movespeed = 40;
+      }
     }
+
   }
   void OnCollisionEnter2D(Collision2D col)
   {
     if(col.gameObject.tag == "bullet")
     {
-      SoundManager.PlaySE("zombieDie");
+      zombieSM.ZplaySE("zombieDie");
       Destroy(gameObject);
       // die animation
     }

@@ -38,7 +38,7 @@ public class GunMec : MonoBehaviour
     // shooting
     if(Input.GetKeyDown(shoot) && bulletCount > 0)
     {
-      SoundManager.PlaySE("shooting");
+      PlayerSM.PlaySE("shooting");
       bulletCount--;
 
       Rigidbody2D bullets;

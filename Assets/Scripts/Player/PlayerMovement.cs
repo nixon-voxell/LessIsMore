@@ -11,9 +11,14 @@ public class PlayerMovement : MonoBehaviour
   [HideInInspector]
   public Rigidbody2D rb;
   // Start is called before the first frame update
-  void Start() => rb = GetComponent<Rigidbody2D>();
-  // public bool moving = false;
+  void Start() 
+  {
+    danger = false;
+    rb = GetComponent<Rigidbody2D>();
+  }
+    
   bool infected = false;
+  public static bool danger = false;
   // Update is called once per frame
   void Update()
   {
@@ -37,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     // how does this work wtf
     if(Mathf.Abs(horizontal) + Mathf.Abs(vertical) == 0f)
       {
-        SoundManager.PlaySE("walking");
+        PlayerSM.PlaySE("walking");
       }
     //map boundaries
   }
@@ -49,7 +54,16 @@ public class PlayerMovement : MonoBehaviour
       //game over
       GunMec.bulletCount = 0;
       infected = true;
-      if(infected)SoundManager.PlaySE("zombieBite");
+      if(infected)zombieSM.ZplaySE("zombieBite");
     }
   }
+
+  void OnTriggerEnter2D(Collider2D co)
+  {
+    if(co.gameObject.tag == "door")
+    {
+      danger = true;
+    }
+  }
+
 }

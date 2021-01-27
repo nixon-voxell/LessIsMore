@@ -2,22 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class PlayerSM : MonoBehaviour
 {
-  public static AudioClip zombieBite, gunFire, morseEffect, walking;
-  public static AudioClip  groan, zombieDie, stopwalk, click;
+  public static AudioClip  click, gunFire, morseEffect, walking;
+  
   static AudioSource audioScr;
     // Start is called before the first frame update
   void Start()
   {
     audioScr = GetComponent<AudioSource>();
-
-    zombieBite = Resources.Load<AudioClip>("zombieBite");
+    
     gunFire = Resources.Load<AudioClip>("shooting");
     morseEffect = Resources.Load<AudioClip>("morsecode");
     walking= Resources.Load<AudioClip>("walking");
-    groan= Resources.Load<AudioClip>("zombieGroan");
-    zombieDie = Resources.Load<AudioClip>("zombieDie");
     click = Resources.Load<AudioClip>("click");
   }
 
@@ -25,9 +22,6 @@ public class SoundManager : MonoBehaviour
   {
     switch(clip)
     {
-      case "zombieBite":
-        audioScr.PlayOneShot(zombieBite);
-        break;
       case "shooting":
         audioScr.PlayOneShot(gunFire);
         break;
@@ -38,19 +32,17 @@ public class SoundManager : MonoBehaviour
         audioScr.clip = walking;
         audioScr.Play();
         break;
-      case "zombieGroan":
-        audioScr.PlayOneShot(groan);
-        break;
-      case "zombieDie":
-        audioScr.PlayOneShot(zombieDie);
-        break;
-        case "click":
+      case "click":
         audioScr.PlayOneShot(click);
         break;
     }
   }
     public void ClickSE()
   {
-    SoundManager.PlaySE("click");
+    PlayerSM.PlaySE("click");
+  }
+    public void MorseSE()
+  {
+    PlayerSM.PlaySE("morsecode");
   }
 }

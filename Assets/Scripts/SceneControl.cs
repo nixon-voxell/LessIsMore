@@ -9,7 +9,7 @@ public class SceneControl : MonoBehaviour
   }
   public void QuitApp()
   {
-    SoundManager.PlaySE("click");
+    PlayerSM.PlaySE("click");
     print("Quit game.");
     Application.Quit();
   }

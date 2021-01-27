@@ -20,7 +20,8 @@ public class Storyline : MonoBehaviour
 
   public void nextText()
   {
-    SoundManager.PlaySE("morseEffect");
+    PlayerSM.PlaySE("morsecode");
+    PlayerSM.PlaySE("morseEffect");
     scriptNo ++;
     text.text = storyLine[scriptNo];
     if(scriptNo == lines) proceed.SetActive(false);
@@ -28,12 +29,12 @@ public class Storyline : MonoBehaviour
   
     public void GameOn()
   {
-    SoundManager.PlaySE("click");
+    PlayerSM.PlaySE("click");
     SceneManager.LoadScene("Movement");
   }
   public void QuitGame()
   {
-    SoundManager.PlaySE("click");
+    PlayerSM.PlaySE("click");
     print("Quit game.");
     Application.Quit();
   }

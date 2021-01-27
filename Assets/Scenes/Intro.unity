@@ -455,7 +455,7 @@ MonoBehaviour:
   storyLine:
   - 'IT''S THE ZOMBIE APOCALYSE !
 
-    HUMANITY IS THREATEN !'
+    HUMANITY IS IN THREAT !'
   - YOU ARE THE ONLY ONE HOPE LEFT FOR HUMANITY...
   - YOU FOUND A LAB WHERE ALL REMAINING ZOMBIES ARE SITUATED...
   - BUT YOU ONLY HAVE 6 BULLETS IN YOUR REVOLVER. YOUR GUN IS STRONG ENOUGH TO PIERCE
@@ -1757,6 +1757,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2098462458}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: ClickSE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2098462458}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: MorseSE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

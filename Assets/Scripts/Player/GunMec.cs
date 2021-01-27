@@ -9,6 +9,7 @@ public class GunMec : MonoBehaviour
   public Transform firepoint;
   public GameObject arm;
   public KeyCode shoot = KeyCode.Mouse0;
+  
   public PlayerMovement movement;
   public ParticleSystem firing;
   void Start()
@@ -36,7 +37,7 @@ public class GunMec : MonoBehaviour
       transform.eulerAngles = Vector3.zero;
     }
     // shooting
-    if(Input.GetKeyDown(shoot) && bulletCount > 0)
+    if(Input.GetKeyDown(shoot) && bulletCount > 0 && !PlayerMovement.infected && PlayerMovement.danger)
     {
       PlayerSM.PlaySE("shooting");
       bulletCount--;
@@ -47,6 +48,8 @@ public class GunMec : MonoBehaviour
       //shooting effect
       Destroy(Instantiate(firing, firepoint.position, Quaternion.identity),5f);
     }
+
+    
 
   }
 }

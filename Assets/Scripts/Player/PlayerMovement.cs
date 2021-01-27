@@ -16,7 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
   [HideInInspector]
   public Rigidbody2D rb;
-  // Start is called before the first frame update
+  public GameObject liftopen;
+  public static bool infected = false;
   void Start() 
   {
     danger = false;
@@ -24,8 +25,6 @@ public class PlayerMovement : MonoBehaviour
     dashMaterial = dashSpriteRenderer.material;
     dashMaterial.SetFloat("_Reveal", 0.0f);
   }
-
-  bool infected = false;
   public static bool danger = false;
   // Update is called once per frame
   void Update()
@@ -72,18 +71,15 @@ public class PlayerMovement : MonoBehaviour
     if(col.gameObject.tag == "enemy" && infected == false)
     {
       //game over
-      GunMec.bulletCount = 0;
       infected = true;
+      danger = false;
       if(infected)zombieSM.ZplaySE("zombieBite");
     }
-  }
-
-  void OnTriggerEnter2D(Collider2D co)
-  {
-    if(co.gameObject.tag == "door")
+    if(col.gameObject.tag == "door")
     {
-      danger = true;
+      liftopen.SetActive(true);
     }
+
   }
 
 }

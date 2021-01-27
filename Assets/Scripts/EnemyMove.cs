@@ -9,11 +9,10 @@ public class EnemyMove : MonoBehaviour
   public float dimension;
   void Start()
   {
+    GameUI.zombieCount ++;
     rd = gameObject.GetComponent<Rigidbody2D>();
-    //random spawn in map range
-    //map dimension
-    float spot = Random.Range(-dimension, dimension);
-    transform.position = new Vector3(spot, spot, 0);
+    // float spot = Random.Range(-dimension, dimension);
+    // transform.position = new Vector3(spot, spot, 0);
   }
   void Update()
   {
@@ -35,7 +34,7 @@ public class EnemyMove : MonoBehaviour
       }else transform.eulerAngles = Vector3.zero;
 
       //zombies goes crazy when bulletCount is zero
-      if(GunMec.bulletCount <=0)
+      if(GunMec.bulletCount < 0)
       {
         movespeed = 40;
       }
@@ -46,6 +45,7 @@ public class EnemyMove : MonoBehaviour
   {
     if(col.gameObject.tag == "bullet")
     {
+      GameUI.zombieCount--;
       zombieSM.ZplaySE("zombieDie");
       Destroy(gameObject);
       // die animation

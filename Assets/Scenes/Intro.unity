@@ -452,6 +452,7 @@ MonoBehaviour:
   text: {fileID: 1957547688}
   proceed: {fileID: 2098572950}
   lines: 6
+  textAniDelay: 0.1
   storyLine:
   - 'IT''S THE ZOMBIE APOCALYSE !
 
@@ -1769,6 +1770,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2098462458}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: MorseSE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 297404987}
+        m_TargetAssemblyTypeName: Storyline, Assembly-CSharp
+        m_MethodName: startStory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

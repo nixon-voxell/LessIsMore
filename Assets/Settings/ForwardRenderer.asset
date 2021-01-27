@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
   m_Name: ForwardRenderer
   m_EditorClassIdentifier: 
-  m_RendererFeatures: []
-  m_RendererFeatureMap: 
+  m_RendererFeatures:
+  - {fileID: 1427262158689977748}
+  m_RendererFeatureMap: 94c512125fa7ce13
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -42,3 +43,38 @@ MonoBehaviour:
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
+--- !u!114 &1427262158689977748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ff7a05bfe8037419d6b075236a46a0, type: 3}
+  m_Name: NewGlitchRenderPassFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  glitchSettings:
+    material: {fileID: 2100000, guid: 39133c9255e47d34791af34bb0bcd22d, type: 2}
+--- !u!114 &7013205388277498597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8eb253fabdd334ba682195244ddc57, type: 3}
+  m_Name: NewGlitch
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderPassEvent: 1000
+    blurMaterial: {fileID: 2100000, guid: 39133c9255e47d34791af34bb0bcd22d, type: 2}
+    blurPasses: 1
+    downsample: 1
+    copyToFramebuffer: 1
+    targetName: _MainTex

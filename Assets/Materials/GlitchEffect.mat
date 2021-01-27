@@ -36,8 +36,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_7296e5adaee5405e8f4e65ba0ffe2bcb: 0.02
-    - _GlitchSpeed: 0.1
-    - _GlitchTolerance: 0.5
+    - GlitchNoiseTolerance: 0.56
+    - Vector1_7296e5adaee5405e8f4e65ba0ffe2bcb: 0.5
+    - _GlitchSpeed: 1
+    - _GlitchStrength: 1
+    - _GlitchTolerance: 0.4
     m_Colors: []
   m_BuildTextureStacks: []

@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dust
-  m_Shader: {fileID: -6465566751694194690, guid: 448c2cfcceaef4c4c93d8340b2bd36d8, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Name: GlitchEffect
+  m_Shader: {fileID: -6465566751694194690, guid: abec968ea80e6c74bacc952701cfc461, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: afb3b612acd95a847b12b530bf4380e6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -36,10 +36,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_040d079e2a59481f8822857ff954ae2a: 1
-    - _DustDensity: 5
-    - _EvaporationSpeed: 0.1
-    m_Colors:
-    - Color_54420c2b071b403db2da69cecb763a70: {r: 0, g: 1024, b: 1024, a: 1}
-    - _MainTex: {r: 0, g: 0, b: 0, a: 0}
+    - Vector1_7296e5adaee5405e8f4e65ba0ffe2bcb: 0.02
+    - _GlitchSpeed: 0.1
+    - _GlitchTolerance: 0.5
+    m_Colors: []
   m_BuildTextureStacks: []

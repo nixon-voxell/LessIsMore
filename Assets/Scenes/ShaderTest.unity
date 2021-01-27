@@ -198,12 +198,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106982947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.39, y: 1.46, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.19, y: 0, z: 0}
+  m_LocalScale: {x: 2.6, y: 2.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 2000833015}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128810912
 GameObject:
@@ -2536,9 +2536,9 @@ GameObject:
   - component: {fileID: 2000833015}
   - component: {fileID: 2000833014}
   - component: {fileID: 2000833013}
-  - component: {fileID: 2000833019}
   - component: {fileID: 2000833018}
   - component: {fileID: 2000833017}
+  - component: {fileID: 2000833019}
   - component: {fileID: 2000833016}
   m_Layer: 0
   m_Name: Player
@@ -2629,6 +2629,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 612834336}
+  - {fileID: 106982949}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2651,6 +2652,7 @@ MonoBehaviour:
   arm: {fileID: 612834335}
   shoot: 323
   movement: {fileID: 2000833019}
+  firing: {fileID: 0}
 --- !u!70 &2000833017
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2700,10 +2702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c1d252caab1024d8832178031dd549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontal: 0
-  vertical: 0
   animator: {fileID: 2000833013}
   movementMultiplier: 2
+  dashForce: 100
   rb: {fileID: 0}
 --- !u!1 &2094989786
 GameObject:

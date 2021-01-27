@@ -2536,9 +2536,9 @@ GameObject:
   - component: {fileID: 2000833015}
   - component: {fileID: 2000833014}
   - component: {fileID: 2000833013}
-  - component: {fileID: 2000833019}
   - component: {fileID: 2000833018}
   - component: {fileID: 2000833017}
+  - component: {fileID: 2000833019}
   - component: {fileID: 2000833016}
   m_Layer: 0
   m_Name: Player
@@ -2651,6 +2651,7 @@ MonoBehaviour:
   arm: {fileID: 612834335}
   shoot: 323
   movement: {fileID: 2000833019}
+  firing: {fileID: 0}
 --- !u!70 &2000833017
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

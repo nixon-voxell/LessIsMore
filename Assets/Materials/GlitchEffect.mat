@@ -39,7 +39,7 @@ Material:
     - GlitchNoiseTolerance: 0.56
     - Vector1_7296e5adaee5405e8f4e65ba0ffe2bcb: 0.5
     - _GlitchSpeed: 1
-    - _GlitchStrength: 0
+    - _GlitchStrength: 1
     - _GlitchTolerance: 0.4
     m_Colors: []
   m_BuildTextureStacks: []

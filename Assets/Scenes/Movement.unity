@@ -8998,14 +8998,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2d678081257a74b82a3597f944b5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 9223046502602481455, guid: c88002b245affde438669b9639b595f4, type: 3}
+  bulletPrefab: {fileID: 9223046502602481427, guid: c88002b245affde438669b9639b595f4, type: 3}
   cursor: {fileID: 960489654}
   bulletspeed: 20
   firepoint: {fileID: 413267652}
   arm: {fileID: 612834335}
   shoot: 323
   movement: {fileID: 2000833019}
-  firing: {fileID: 4435688232255993512, guid: 675dfa860f068ed499918569a8fe06b0, type: 3}
+  firingEffect: {fileID: 4225093761746262190, guid: 675dfa860f068ed499918569a8fe06b0, type: 3}
 --- !u!70 &2000833017
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -9058,15 +9058,6 @@ MonoBehaviour:
   animator: {fileID: 2000833013}
   movementMultiplier: 1
   dashForce: 100
-  dashSpriteRenderer: {fileID: 0}
-  dashMaterial: {fileID: 0}
-  dashEffectCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  dashEffectDuration: 1
   rb: {fileID: 0}
   liftopen: {fileID: 389633308}
 --- !u!1 &2016723233

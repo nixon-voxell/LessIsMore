@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: afb3b612acd95a847b12b530bf4380e6, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -38,6 +38,8 @@ Material:
     m_Floats:
     - GlitchNoiseTolerance: 0.56
     - Vector1_7296e5adaee5405e8f4e65ba0ffe2bcb: 0.5
+    - Vector1_c6bef4caa15e496ab6c36020f7cfc931: 0.002
+    - Vector1_d67a2548220544938893fd1fa3b3e7a5: 100
     - _GlitchSpeed: 1
     - _GlitchStrength: 1
     - _GlitchTolerance: 0.4

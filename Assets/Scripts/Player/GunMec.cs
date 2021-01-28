@@ -3,7 +3,7 @@ using UnityEngine;
 public class GunMec : MonoBehaviour
 {
   public static int bulletCount = 6;
-  public Rigidbody2D bulletPrefab;
+  public GameObject bulletPrefab;
   public GameObject cursor;
   public float bulletspeed;
   public Transform firepoint;
@@ -11,7 +11,7 @@ public class GunMec : MonoBehaviour
   public KeyCode shoot = KeyCode.Mouse0;
   
   public PlayerMovement movement;
-  public ParticleSystem firing;
+  public ParticleSystem firingEffect;
   
   void Update()
   {
@@ -39,11 +39,13 @@ public class GunMec : MonoBehaviour
       PlayerSM.PlaySE("shooting");
       bulletCount--;
 
-      Rigidbody2D bullets;
-      bullets = Instantiate(bulletPrefab, firepoint.position, Quaternion.Euler(0, 0, pointAngle));
-      bullets.velocity = transform.TransformDirection(mousePos.normalized)*bulletspeed;
+      GameObject bullets;
+      bullets = Instantiate(bulletPrefab, firepoint.position, Quaternion.Euler(0, 0, pointAngle - 90.0f));
+      Rigidbody2D bulletsRB = bullets.GetComponent<Rigidbody2D>();
+      bulletsRB.velocity = transform.TransformDirection(mousePos.normalized)*bulletspeed;
+      print("Shoot");
       //shooting effect
-      Destroy(Instantiate(firing, firepoint.position, Quaternion.identity),5f);
+      Destroy(Instantiate(firingEffect, firepoint.position, Quaternion.identity),5f);
     }
   }
 }

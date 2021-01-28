@@ -63,7 +63,7 @@ public class GlitchRenderPassFeature : ScriptableRendererFeature
     m_ScriptablePass = new CustomRenderPass(glitchSettings.material);
 
     // Configures where the render pass should be injected.
-    m_ScriptablePass.renderPassEvent = RenderPassEvent.AfterRendering;
+    m_ScriptablePass.renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
   }
 
   // Here you can inject one or multiple render passes in the renderer.

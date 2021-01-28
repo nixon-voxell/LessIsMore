@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_ed5e34c4ce014c74a16c9b7dac0cf7ed: -0.5
+    - Vector1_ed5e34c4ce014c74a16c9b7dac0cf7ed: -0.4
     - _Turbulance: 10
     - _WobbleSpeed: 0.1
     - _WobbleStrength: 0.06

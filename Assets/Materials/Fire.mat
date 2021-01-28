@@ -40,11 +40,11 @@ Material:
     - Vector1_7101b265563e4894b19a84b95448763f: 0.05
     - Vector1_aff4b3ccdd22420cb7b831da97795ce8: 0.5
     - Vector1_b472f233251f406198c7f3e7ea4b0b1b: 0.55
-    - _Glow: 500
+    - _Glow: 50
     - _Reveal: 1
     - _UVScale: 0.5
     m_Colors:
     - Vector2_99c5a824f37046e3aae6c32d4cb929ae: {r: 0.5, g: 0.25, b: 0, a: 0}
-    - _Offset: {r: 1, g: 1, b: 0, a: 0}
-    - _UVScale: {r: 1, g: 1, b: 0, a: 0}
+    - _Offset: {r: 0.48, g: 0.4, b: 0, a: 0}
+    - _UVScale: {r: 0.5, g: 0.15, b: 0, a: 0}
   m_BuildTextureStacks: []

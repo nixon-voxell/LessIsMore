@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerSM : MonoBehaviour
 {
-  public static AudioClip  click, gunFire, morseEffect, walking;
+  public static AudioClip  click, gunFire, morseEffect, walking, door;
   
   static AudioSource audioScr;
     // Start is called before the first frame update
@@ -12,6 +10,7 @@ public class PlayerSM : MonoBehaviour
   {
     audioScr = GetComponent<AudioSource>();
     
+    door = Resources.Load<AudioClip>("Door");
     gunFire = Resources.Load<AudioClip>("shooting");
     morseEffect = Resources.Load<AudioClip>("morsecode");
     walking= Resources.Load<AudioClip>("walking");
@@ -22,6 +21,9 @@ public class PlayerSM : MonoBehaviour
   {
     switch(clip)
     {
+      case "door":
+        audioScr.PlayOneShot(door);
+        break;
       case "shooting":
         audioScr.PlayOneShot(gunFire);
         break;

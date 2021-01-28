@@ -12,10 +12,7 @@ public class GunMec : MonoBehaviour
   
   public PlayerMovement movement;
   public ParticleSystem firing;
-  void Start()
-  {
-    bulletCount = 6;
-  }
+  
   void Update()
   {
     // mouse point in world position
@@ -48,8 +45,5 @@ public class GunMec : MonoBehaviour
       //shooting effect
       Destroy(Instantiate(firing, firepoint.position, Quaternion.identity),5f);
     }
-
-    
-
   }
 }

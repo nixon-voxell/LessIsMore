@@ -4,15 +4,11 @@ public class EnemyMove : MonoBehaviour
 {
   public Rigidbody2D rd;
   public Transform player;
-  Vector2 movement;
   public float movespeed;
-  public float dimension;
   void Start()
   {
     GameUI.zombieCount ++;
     rd = gameObject.GetComponent<Rigidbody2D>();
-    // float spot = Random.Range(-dimension, dimension);
-    // transform.position = new Vector3(spot, spot, 0);
   }
   void Update()
   {
@@ -20,7 +16,7 @@ public class EnemyMove : MonoBehaviour
     Vector3 direction = player.position - transform.position;
     
     // convert coords to angle against player
-    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+    // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
     direction.Normalize(); //direction of enemy to player
 
     if(PlayerMovement.danger)

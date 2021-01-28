@@ -77,9 +77,9 @@ public class PlayerMovement : MonoBehaviour
     }
     if(col.gameObject.tag == "door")
     {
+      PlayerSM.PlaySE("door");
       liftopen.SetActive(true);
     }
-
   }
 
 }

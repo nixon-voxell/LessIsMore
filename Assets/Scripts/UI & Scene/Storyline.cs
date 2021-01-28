@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -7,26 +8,44 @@ public class Storyline : MonoBehaviour
   public TextMeshProUGUI text;
   public GameObject proceed;
   public int lines;
+  private string currentText;
+  public float textAniDelay;
   int scriptNo;
   [TextArea(3,10)]
   public string[] storyLine;
   // Start is called before the first frame update
   void Start()
   {
-    proceed.SetActive(true);
+    proceed.SetActive(false);
     scriptNo = 0;
-    text.text= storyLine[0];
+    currentText = storyLine[0];
+  }
+
+  public void startStory()
+  {
+    StartCoroutine(TextAni());
+  }
+  
+  IEnumerator TextAni()
+  {
+    for(int i= 0; i < storyLine[scriptNo].Length+1; i++)
+    {
+      currentText = storyLine[scriptNo].Substring(0,i);
+      text.text = currentText;
+      yield return new WaitForSeconds(textAniDelay);
+    }
+    proceed.SetActive(true);
   }
 
   public void nextText()
   {
     PlayerSM.PlaySE("morsecode");
-    PlayerSM.PlaySE("morseEffect");
+    proceed.SetActive(false);
     scriptNo ++;
-    text.text = storyLine[scriptNo];
+    StartCoroutine(TextAni());
     if(scriptNo == lines) proceed.SetActive(false);
   }
-  
+
     public void GameOn()
   {
     PlayerSM.PlaySE("click");

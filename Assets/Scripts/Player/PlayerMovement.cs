@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
+    Cursor.visible = false;
     if(GunMec.bulletCount > 0)
     {
       float horizontal = Input.GetAxis("Horizontal");

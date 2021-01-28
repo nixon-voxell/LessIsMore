@@ -638,6 +638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lift: {fileID: 0}
   liftText: {fileID: 0}
+  zombieCount: 0
   levelUp: {fileID: 0}
   gameoverUI: {fileID: 2094989786}
   bullet:
@@ -2485,12 +2486,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 74a0af04b5074d641bc97cd74c379838, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33b8ed8b939aa504dbc7b3dc92d37273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.36, y: 1.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

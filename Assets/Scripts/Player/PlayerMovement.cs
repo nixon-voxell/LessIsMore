@@ -39,11 +39,11 @@ public class PlayerMovement : MonoBehaviour
       animator.SetFloat("speed", rb.velocity.magnitude);
 
       // // how does this work wtf
-      // if(Mathf.Abs(horizontal) + Mathf.Abs(vertical) == 0f)
-      // {
-      //   SoundManager.PlaySE("walking");
-      // }
-      // //map boundaries
+      if(Mathf.Abs(horizontal) + Mathf.Abs(vertical) == 0f)
+      {
+        PlayerSM.PlaySE("walking");
+      }
+      //map boundaries
     }
   }
 

@@ -7,14 +7,13 @@ public class GameUI : MonoBehaviour
 {
   public GameObject lift;
   public GameObject liftText;
-  public static int zombieCount;
+  public  int zombieCount;
   public GameObject levelUp;
   public GameObject gameoverUI;
   public Image[] bullet;
   public TextMeshProUGUI levelText;
   KeyCode uplevel = KeyCode.F;
   KeyCode OpenLift = KeyCode.Mouse1;
-  
   public int level = 1;
   
   void Start() 
@@ -48,6 +47,7 @@ public class GameUI : MonoBehaviour
 
     if(Input.GetKeyDown(OpenLift))
     {
+      PlayerSM.PlaySE("door");
       PlayerMovement.danger = true;
       lift.SetActive(false);
       liftText.SetActive(false);

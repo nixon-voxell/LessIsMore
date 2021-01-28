@@ -35,8 +35,8 @@ public class Storyline : MonoBehaviour
       yield return new WaitForSeconds(textAniDelay);
     }
     proceed.SetActive(true);
+    PlayerSM.PlaySE("stop");
   }
-
   public void nextText()
   {
     PlayerSM.PlaySE("morsecode");

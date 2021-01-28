@@ -5,9 +5,10 @@ public class EnemyMove : MonoBehaviour
   public Rigidbody2D rd;
   public Transform player;
   public float movespeed;
+  public GameUI UI;
   void Start()
   {
-    GameUI.zombieCount ++;
+    UI.zombieCount++;
     rd = gameObject.GetComponent<Rigidbody2D>();
   }
   void Update()
@@ -41,7 +42,7 @@ public class EnemyMove : MonoBehaviour
   {
     if(col.gameObject.tag == "bullet")
     {
-      GameUI.zombieCount--;
+      UI.zombieCount--;
       zombieSM.ZplaySE("zombieDie");
       Destroy(gameObject);
       // die animation

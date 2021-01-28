@@ -28,7 +28,11 @@ public class PlayerSM : MonoBehaviour
         audioScr.PlayOneShot(gunFire);
         break;
       case "morsecode":
-        audioScr.PlayOneShot(morseEffect);
+        audioScr.clip = morseEffect;
+        audioScr.Play();
+        break;
+      case "stop":
+        audioScr.Stop();
         break;
       case "walking":
         audioScr.clip = walking;

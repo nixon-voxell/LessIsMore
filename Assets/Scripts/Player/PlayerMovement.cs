@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
   public static bool infected = false;
   void Start() 
   {
+    infected = false;
     danger = false;
     rb = GetComponent<Rigidbody2D>();
   }
@@ -56,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
     }
     if(col.gameObject.tag == "door")
     {
-      PlayerSM.PlaySE("door");
       liftopen.SetActive(true);
     }
   }

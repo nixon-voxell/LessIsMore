@@ -5,7 +5,7 @@ public class SceneControl : MonoBehaviour
 {
   public void replay() // load level 1
   {
-    SceneManager.LoadScene("Movement");
+    SceneManager.LoadScene("levlel 1");
     GunMec.bulletCount = 6;
     PlayerMovement.infected = false;
     PlayerMovement.danger = false;

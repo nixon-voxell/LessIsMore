@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 0.15589, y: 0.12319185, z: 1}
   m_Children: []
   m_Father: {fileID: 3806561768945794690}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1112958891
 SpriteRenderer:
@@ -132,7 +132,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,7 +152,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 101
   m_Sprite: {fileID: 21300000, guid: ff47d3b487955ac48ab8c601733fe9ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -235,7 +235,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 50
   m_Sprite: {fileID: 21300000, guid: bff108b91bfc1d249a1697cc69490706, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -314,6 +314,7 @@ Transform:
   - {fileID: 3806561767977721805}
   - {fileID: 3806561768153410389}
   - {fileID: 974362708421032810}
+  - {fileID: 1112958890}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -358,7 +359,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 50
   m_Sprite: {fileID: -4750839459710117638, guid: fa7751fc562eeb04f93b5c445b6748c0, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -421,8 +422,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.40296388, y: 0.018681526}
-  m_Size: {x: 1.5067139, y: 4.296567}
+  m_Offset: {x: -0.31084263, y: -0.2511021}
+  m_Size: {x: 1.3224714, y: 3.7569997}
   m_Direction: 0
 --- !u!114 &3806561768945794702
 MonoBehaviour:

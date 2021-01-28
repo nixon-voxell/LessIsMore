@@ -5,6 +5,7 @@ using TMPro;
 
 public class GameUI : MonoBehaviour
 {
+  public GameObject cursor;
   public GameObject lift;
   public GameObject liftText;
   public  int zombieCount;

@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
       {
         PlayerSM.PlaySE("walking");
       }
-      //map boundaries
     }
   }
 

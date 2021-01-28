@@ -657,8 +657,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116518612}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -34.2747, y: -7, z: 0}
-  m_LocalScale: {x: 1, y: 0.8056911, z: 1}
+  m_LocalPosition: {x: -34.7957, y: -7, z: 0}
+  m_LocalScale: {x: 1, y: 0.8851323, z: 1}
   m_Children: []
   m_Father: {fileID: 856618343}
   m_RootOrder: 2
@@ -1101,6 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff3a65c1a6380b4d8d83bbbe2db9ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor: {fileID: 0}
   lift: {fileID: 358236196}
   liftText: {fileID: 2029661957}
   zombieCount: 0
@@ -6918,8 +6919,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516620103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.5607, y: -1.7181, z: 0}
-  m_LocalScale: {x: 0.6496, y: 1.0502644, z: 1}
+  m_LocalPosition: {x: -39.5607, y: -0.9122, z: 0}
+  m_LocalScale: {x: 0.6496, y: 0.9273834, z: 1}
   m_Children: []
   m_Father: {fileID: 1776022545}
   m_RootOrder: 1

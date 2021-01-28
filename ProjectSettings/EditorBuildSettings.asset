@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Outro.unity
     guid: 42fd1eb112bb924469f7a06a048aad98
   - enabled: 1
-    path: Assets/Scenes/Movement.unity
+    path: Assets/Scenes/levlel 1.unity
     guid: 8e8f0bffec3587745815ceaaaac67cc7
   - enabled: 1
     path: Assets/Scenes/levlel 2.unity

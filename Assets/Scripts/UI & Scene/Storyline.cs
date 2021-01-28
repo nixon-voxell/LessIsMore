@@ -49,7 +49,7 @@ public class Storyline : MonoBehaviour
     public void GameOn()
   {
     PlayerSM.PlaySE("click");
-    SceneManager.LoadScene("Movement");
+    SceneManager.LoadScene("levlel 1");
   }
   public void QuitGame()
   {

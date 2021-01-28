@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-  public Rigidbody2D rd;
+  public Rigidbody2D rb;
   public Transform player;
   public float movespeed;
   public GameUI UI;
   void Start()
   {
     UI.zombieCount++;
-    rd = gameObject.GetComponent<Rigidbody2D>();
+    rb = gameObject.GetComponent<Rigidbody2D>();
   }
-  void Update()
+  void FixedUpdate()
   {
     //distance between player and ememy
     Vector3 direction = player.position - transform.position;
@@ -22,7 +22,7 @@ public class EnemyMove : MonoBehaviour
 
     if(PlayerMovement.danger)
     {
-      rd.MovePosition(transform.position + (direction* movespeed* Time.deltaTime));
+      rb.MovePosition(transform.position + (direction* movespeed* Time.deltaTime));
 
       zombieSM.ZplaySE("zombieGroan");
       if(direction.x <0) // left

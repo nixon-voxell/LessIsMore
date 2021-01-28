@@ -1101,6 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff3a65c1a6380b4d8d83bbbe2db9ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor: {fileID: 0}
   lift: {fileID: 358236196}
   liftText: {fileID: 2029661957}
   zombieCount: 0
@@ -9513,14 +9514,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3806561767977721794, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
-      propertyPath: m_SortingOrder
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 3806561767977721794, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 3806561768153410388, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

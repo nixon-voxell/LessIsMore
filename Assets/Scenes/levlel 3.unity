@@ -1199,6 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff3a65c1a6380b4d8d83bbbe2db9ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor: {fileID: 0}
   lift: {fileID: 358236196}
   liftText: {fileID: 2029661957}
   zombieCount: 0
@@ -1262,8 +1263,8 @@ Canvas:
   m_GameObject: {fileID: 176539766}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 763886159}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1272,7 +1273,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &176539772
 RectTransform:
@@ -1526,10 +1527,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2000833015}
-    - target: {fileID: 2254425108705357742, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
-      propertyPath: movespeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2254425108705357745, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2985,10 +2982,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2000833015}
-    - target: {fileID: 2254425108705357742, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
-      propertyPath: movespeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2254425108705357745, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4510,10 +4503,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2000833015}
-    - target: {fileID: 2254425108705357742, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
-      propertyPath: movespeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2254425108705357745, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4584,10 +4573,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2000833015}
-    - target: {fileID: 2254425108705357742, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
-      propertyPath: movespeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2254425108705357745, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5120,10 +5105,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2000833015}
-    - target: {fileID: 2254425108705357742, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
-      propertyPath: movespeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2254425108705357745, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8906,10 +8887,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2000833015}
-    - target: {fileID: 2254425108705357742, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
-      propertyPath: movespeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2254425108705357745, guid: 65720723c45698b4a8f40b7921fc7980, type: 3}
       propertyPath: m_RootOrder
       value: 4

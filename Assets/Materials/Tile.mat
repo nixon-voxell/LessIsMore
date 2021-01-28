@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fire
-  m_Shader: {fileID: -6465566751694194690, guid: 2f1a9c2a3f65f434380060ea0ced8353, type: 3}
+  m_Name: Tile
+  m_Shader: {fileID: -6465566751694194690, guid: ffc31dd8ff8274145b404b141dfe6d51, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -36,15 +36,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1140a9c70c4940a09fbf73e6226777f8: 40
-    - Vector1_7101b265563e4894b19a84b95448763f: 0.05
-    - Vector1_aff4b3ccdd22420cb7b831da97795ce8: 0.5
-    - Vector1_b472f233251f406198c7f3e7ea4b0b1b: 0.55
-    - _Glow: 500
-    - _Reveal: 1
-    - _UVScale: 0.5
+    - Vector1_42d9600a07e547d08f74248ac393a760: 2
+    - Vector1_d918871dfa03419d8940981ab9a914ff: 0.5
+    - _CrackDensity: 7.51
+    - _CrackNoise: 73.74
+    - _NoiseVisibility: 3.76
     m_Colors:
-    - Vector2_99c5a824f37046e3aae6c32d4cb929ae: {r: 0.5, g: 0.25, b: 0, a: 0}
-    - _Offset: {r: 1, g: 1, b: 0, a: 0}
-    - _UVScale: {r: 1, g: 1, b: 0, a: 0}
+    - _CrackColor: {r: 4.234812, g: 10.496464, b: 15.750528, a: 1}
   m_BuildTextureStacks: []

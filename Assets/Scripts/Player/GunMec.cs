@@ -43,7 +43,6 @@ public class GunMec : MonoBehaviour
       bullets = Instantiate(bulletPrefab, firepoint.position, Quaternion.Euler(0, 0, pointAngle));
       Rigidbody2D bulletsRB = bullets.GetComponent<Rigidbody2D>();
       bulletsRB.velocity = transform.TransformDirection(mousePos.normalized)*bulletspeed;
-      print("Shoot");
       //shooting effect
       Destroy(Instantiate(firingEffect, firepoint.position, Quaternion.identity),5f);
     }

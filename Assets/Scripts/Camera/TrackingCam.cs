@@ -20,7 +20,7 @@ public class TrackingCam : MonoBehaviour
     // transform.position = mapPos;
     timePassed = 0.0f;
   }
-  void Update()
+  void FixedUpdate()
   {
     timePassed += Time.deltaTime;
     if (timePassed >= delayTime) PlayerFollow();

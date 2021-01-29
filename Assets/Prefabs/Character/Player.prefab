@@ -437,8 +437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3806561768945794688}
-  movementMultiplier: 2
-  dashForce: 100
+  movementMultiplier: 8
+  dashForce: 60
   rb: {fileID: 0}
   liftopen: {fileID: 0}
 --- !u!114 &3806561768945794701

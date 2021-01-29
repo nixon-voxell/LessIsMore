@@ -419,8 +419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2254425108705357746}
   selCol: {fileID: 2254425108705357749}
-  player: {fileID: 3806561768945794690, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
-  movespeed: 2
+  player: {fileID: 0}
+  movespeed: 3
   UI: {fileID: 0}
   bloodEffect: {fileID: 3368306238269580497, guid: a2eac8906e418904db9141758b3c63c7, type: 3}
   animator: {fileID: 7090864068803138912}

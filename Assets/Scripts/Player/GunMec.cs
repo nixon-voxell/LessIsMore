@@ -40,7 +40,7 @@ public class GunMec : MonoBehaviour
       bulletCount--;
 
       GameObject bullets;
-      bullets = Instantiate(bulletPrefab, firepoint.position, Quaternion.Euler(0, 0, pointAngle - 90.0f));
+      bullets = Instantiate(bulletPrefab, firepoint.position, Quaternion.Euler(0, 0, pointAngle));
       Rigidbody2D bulletsRB = bullets.GetComponent<Rigidbody2D>();
       bulletsRB.velocity = transform.TransformDirection(mousePos.normalized)*bulletspeed;
       print("Shoot");

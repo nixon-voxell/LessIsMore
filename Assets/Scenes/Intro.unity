@@ -3141,7 +3141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME NAME
+  m_text: 6 SHOTS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}
   m_sharedMaterial: {fileID: 7783637436224785758, guid: c9ac657b7f12e2149bc9bbe188a4116a, type: 2}

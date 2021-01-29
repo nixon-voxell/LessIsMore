@@ -40,6 +40,6 @@ Material:
     - _DustDensity: 5
     - _EvaporationSpeed: 0.1
     m_Colors:
-    - Color_54420c2b071b403db2da69cecb763a70: {r: 0, g: 1024, b: 1024, a: 1}
+    - Color_54420c2b071b403db2da69cecb763a70: {r: 0, g: 1351.1758, b: 1340.5784, a: 1}
     - _MainTex: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

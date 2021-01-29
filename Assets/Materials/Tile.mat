@@ -38,7 +38,7 @@ Material:
     m_Floats:
     - Vector1_42d9600a07e547d08f74248ac393a760: 2
     - Vector1_d918871dfa03419d8940981ab9a914ff: 0.5
-    - _CrackDensity: 7.51
+    - _CrackDensity: 3.2
     - _CrackNoise: 73.74
     - _NoiseVisibility: 3.76
     m_Colors:

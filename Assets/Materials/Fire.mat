@@ -40,7 +40,7 @@ Material:
     - Vector1_7101b265563e4894b19a84b95448763f: 0.05
     - Vector1_aff4b3ccdd22420cb7b831da97795ce8: 0.5
     - Vector1_b472f233251f406198c7f3e7ea4b0b1b: 0.55
-    - _Glow: 50
+    - _Glow: 30
     - _Reveal: 1
     - _UVScale: 0.5
     m_Colors:

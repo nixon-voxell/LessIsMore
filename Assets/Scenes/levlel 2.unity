@@ -3151,7 +3151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2069137, y: -3.2706897}
+  m_Offset: {x: -0.055786848, y: -3.27069}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3162,7 +3162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7861724, y: 19.661375}
+  m_Size: {x: 3.088426, y: 19.661375}
   m_EdgeRadius: 0
 --- !u!50 &691794763
 Rigidbody2D:
@@ -3579,12 +3579,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 763886159}
-  MapcameraSize: 15
   realCamSize: 15
   offset: {x: 0, y: 0, z: -10}
   player: {fileID: 2000833015}
   camspeed: 0.1
-  mapPos: {x: -18, y: 3.8, z: -10}
   delayTime: 2
 --- !u!1 &780156822
 GameObject:
@@ -5391,7 +5389,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2069137, y: 0}
+  m_Offset: {x: -0.053322196, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5402,7 +5400,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7861724, y: 13.12}
+  m_Size: {x: 3.0933554, y: 13.12}
   m_EdgeRadius: 0
 --- !u!50 &1022167913
 Rigidbody2D:

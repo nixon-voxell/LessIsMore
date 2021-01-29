@@ -2400,10 +2400,6 @@ PrefabInstance:
       propertyPath: liftopen
       value: 
       objectReference: {fileID: 2029661957}
-    - target: {fileID: 3806561768945794702, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
-      propertyPath: movementMultiplier
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
 --- !u!1 &603514367
@@ -2668,7 +2664,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2069137, y: -3.2706897}
+  m_Offset: {x: -0.025785744, y: -3.27069}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2679,7 +2675,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7861724, y: 19.661375}
+  m_Size: {x: 3.1484284, y: 19.661375}
   m_EdgeRadius: 0
 --- !u!50 &691794763
 Rigidbody2D:
@@ -4527,7 +4523,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2069137, y: 0}
+  m_Offset: {x: -0.037543118, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4538,7 +4534,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7861724, y: 13.12}
+  m_Size: {x: 3.1249137, y: 13.12}
   m_EdgeRadius: 0
 --- !u!50 &1022167913
 Rigidbody2D:

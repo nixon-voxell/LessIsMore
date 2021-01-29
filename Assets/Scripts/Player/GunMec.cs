@@ -44,7 +44,7 @@ public class GunMec : MonoBehaviour
       Rigidbody2D bulletsRB = bullets.GetComponent<Rigidbody2D>();
       bulletsRB.velocity = transform.TransformDirection(mousePos.normalized)*bulletspeed;
       //shooting effect
-      Destroy(Instantiate(firingEffect, firepoint.position, Quaternion.identity),5f);
+      Destroy(Instantiate(firingEffect, firepoint.position, Quaternion.identity), 2f);
     }
   }
 }

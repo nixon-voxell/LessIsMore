@@ -6,6 +6,8 @@ public class EnemyMove : MonoBehaviour
   public Transform player;
   public float movespeed;
   public GameUI UI;
+  public GameObject bloodEffect;
+
   void Start()
   {
     UI.zombieCount++;
@@ -46,6 +48,9 @@ public class EnemyMove : MonoBehaviour
       zombieSM.ZplaySE("zombieDie");
       Destroy(gameObject);
       // die animation
+
+      // Blood Effect
+      Destroy(Instantiate(bloodEffect, transform.position, Quaternion.Euler(-90.0f, 0, 0)), 10.0f);
     }
   }
 }

@@ -6,7 +6,7 @@ public class bulletmovement : MonoBehaviour
 {
   void OnCollisionEnter2D(Collision2D col)
   {
-    if(col.gameObject.tag != "enemy")Destroy(gameObject);
+    if(col.gameObject.tag != "enemy" && col.gameObject.tag != "Player")Destroy(gameObject);
     
   }
 }

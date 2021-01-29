@@ -5,21 +5,25 @@ using UnityEngine;
 public class TrackingCam : MonoBehaviour
 {
   public Camera cam;
-  public float MapcameraSize;
   public float realCamSize = 15f;
   public Vector3 offset;
   public Transform player;
   public float camspeed = 0.125f;
-  public Vector3 mapPos;
+  // public Vector3 mapPos;
+
+  public float delayTime = 2.0f;
+  private float timePassed;
+
+
   void Start()
   {
-    cam.orthographicSize = MapcameraSize;
-    transform.position = mapPos;
+    // transform.position = mapPos;
+    timePassed = 0.0f;
   }
-  void FixedUpdate()
+  void Update()
   {
-    Invoke("PlayerFollow",2f);
-    cam.orthographicSize = Mathf.Lerp(MapcameraSize,realCamSize,0.1f);
+    timePassed += Time.deltaTime;
+    if (timePassed >= delayTime) PlayerFollow();
   }
 
   void PlayerFollow()
@@ -27,5 +31,7 @@ public class TrackingCam : MonoBehaviour
     Vector3 desiredPos = player.position + offset;
     Vector3 smoothcam = Vector3.Lerp(transform.position, desiredPos, camspeed);
     transform.position = smoothcam;
+
+    cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, realCamSize, 0.1f);
   }
 }

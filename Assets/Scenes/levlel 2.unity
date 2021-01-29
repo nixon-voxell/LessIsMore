@@ -3579,12 +3579,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 763886159}
-  MapcameraSize: 40
+  MapcameraSize: 15
   realCamSize: 15
   offset: {x: 0, y: 0, z: -10}
   player: {fileID: 2000833015}
   camspeed: 0.1
   mapPos: {x: -18, y: 3.8, z: -10}
+  delayTime: 2
 --- !u!1 &780156822
 GameObject:
   m_ObjectHideFlags: 0

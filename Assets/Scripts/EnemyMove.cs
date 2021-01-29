@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
   public Rigidbody2D rb;
-  public Collider2D collider;
+  public Collider2D selCol;
   public Transform player;
   public float movespeed;
   public GameUI UI;
@@ -55,7 +55,7 @@ public class EnemyMove : MonoBehaviour
       dead = true;
       UI.zombieCount--;
       zombieSM.ZplaySE("zombieDie");
-      collider.isTrigger = true;
+      selCol.isTrigger = true;
       // die animation
       animator.SetBool("Move", false);
       animator.SetBool("Die", true);

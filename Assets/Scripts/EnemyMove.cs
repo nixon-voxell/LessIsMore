@@ -3,10 +3,17 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
   public Rigidbody2D rb;
+  public Collider2D collider;
   public Transform player;
   public float movespeed;
   public GameUI UI;
   public GameObject bloodEffect;
+
+  public Animator animator;
+
+  public Transform bloodSplatterLocation;
+
+  private bool dead;
 
   void Start()
   {
@@ -22,12 +29,13 @@ public class EnemyMove : MonoBehaviour
     // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
     direction.Normalize(); //direction of enemy to player
 
-    if(PlayerMovement.danger)
+    if(PlayerMovement.danger && !dead)
     {
       rb.MovePosition(transform.position + (direction* movespeed* Time.deltaTime));
+      animator.SetBool("Move", true);
 
       zombieSM.ZplaySE("zombieGroan");
-      if(direction.x <0) // left
+      if(direction.x > 0) // left
       {
         transform.eulerAngles = new Vector3(0, 180, 0);
       }else transform.eulerAngles = Vector3.zero;
@@ -37,20 +45,23 @@ public class EnemyMove : MonoBehaviour
       {
         movespeed = 40;
       }
-    }
+    } else animator.SetBool("Move", false);
 
   }
   void OnCollisionEnter2D(Collision2D col)
   {
     if(col.gameObject.tag == "bullet")
     {
+      dead = true;
       UI.zombieCount--;
       zombieSM.ZplaySE("zombieDie");
-      Destroy(gameObject);
+      collider.isTrigger = true;
       // die animation
+      animator.SetBool("Move", false);
+      animator.SetBool("Die", true);
 
       // Blood Effect
-      Destroy(Instantiate(bloodEffect, transform.position, Quaternion.Euler(-90.0f, 0, 0)), 10.0f);
+      Destroy(Instantiate(bloodEffect, bloodSplatterLocation.position, Quaternion.Euler(-90.0f, 0, 0)), 10.0f);
     }
   }
 }

@@ -266,8 +266,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255389
-  m_fontColor: {r: 0.11250341, g: 1, b: 0, a: 1}
+    rgba: 4291559106
+  m_fontColor: {r: 0.7607843, g: 0.99607843, b: 0.79607844, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1848,8 +1848,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255361
-  m_fontColor: {r: 0.0047392845, g: 1, b: 0, a: 1}
+    rgba: 4291559106
+  m_fontColor: {r: 0.7607844, g: 0.9960785, b: 0.7960785, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2692,8 +2692,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255361
-  m_fontColor: {r: 0.0047392845, g: 1, b: 0, a: 1}
+    rgba: 4291559106
+  m_fontColor: {r: 0.7607843, g: 0.99607843, b: 0.79607844, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3581,7 +3581,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2098462458}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerSM, Assembly-CSharp
         m_MethodName: ClickSE
         m_Mode: 1
         m_Arguments:

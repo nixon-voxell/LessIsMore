@@ -3096,12 +3096,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 763886159}
-  MapcameraSize: 15
   realCamSize: 15
   offset: {x: 0, y: 0, z: -1}
   player: {fileID: 1378089368}
   camspeed: 0.1
-  mapPos: {x: -14, y: 3.8, z: -10}
+  delayTime: 2
 --- !u!1 &780156822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4674,7 +4673,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0

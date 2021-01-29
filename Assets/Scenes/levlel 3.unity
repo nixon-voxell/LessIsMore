@@ -1130,12 +1130,12 @@ MonoBehaviour:
   levelUp: {fileID: 867152753}
   gameoverUI: {fileID: 1679870534}
   bullet:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1089667975}
+  - {fileID: 1629319232}
+  - {fileID: 1443651385}
+  - {fileID: 1515125005}
+  - {fileID: 239817764}
+  - {fileID: 1095394712}
   levelText: {fileID: 539619108}
   level: 3
 --- !u!114 &176539769

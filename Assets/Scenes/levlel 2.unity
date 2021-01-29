@@ -1032,12 +1032,12 @@ MonoBehaviour:
   levelUp: {fileID: 867152753}
   gameoverUI: {fileID: 1679870534}
   bullet:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 284560967}
+  - {fileID: 1046890777}
+  - {fileID: 557139711}
+  - {fileID: 632423990}
+  - {fileID: 2046354052}
+  - {fileID: 501192747}
   levelText: {fileID: 539619108}
   level: 2
 --- !u!114 &176539769
@@ -5527,7 +5527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6971412746974896982, guid: 82726421a6e5457408522913223cf77e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6971412746974896982, guid: 82726421a6e5457408522913223cf77e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9637,7 +9637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3806561768945794690, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3806561768945794690, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
       propertyPath: m_LocalPosition.x

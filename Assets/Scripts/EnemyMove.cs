@@ -8,6 +8,8 @@ public class EnemyMove : MonoBehaviour
   public GameUI UI;
   public GameObject bloodEffect;
 
+  public Animator animator;
+
   void Start()
   {
     UI.zombieCount++;
@@ -25,9 +27,10 @@ public class EnemyMove : MonoBehaviour
     if(PlayerMovement.danger)
     {
       rb.MovePosition(transform.position + (direction* movespeed* Time.deltaTime));
+      animator.SetBool("Move", true);
 
       zombieSM.ZplaySE("zombieGroan");
-      if(direction.x <0) // left
+      if(direction.x > 0) // left
       {
         transform.eulerAngles = new Vector3(0, 180, 0);
       }else transform.eulerAngles = Vector3.zero;
@@ -37,7 +40,7 @@ public class EnemyMove : MonoBehaviour
       {
         movespeed = 40;
       }
-    }
+    } else animator.SetBool("Move", false);
 
   }
   void OnCollisionEnter2D(Collision2D col)

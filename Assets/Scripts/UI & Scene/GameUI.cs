@@ -14,6 +14,7 @@ public class GameUI : MonoBehaviour
   public TextMeshProUGUI levelText;
   KeyCode uplevel = KeyCode.F;
   KeyCode OpenLift = KeyCode.Mouse1;
+
   public int level = 1;
   
   void Start() 
@@ -40,7 +41,7 @@ public class GameUI : MonoBehaviour
       levelUp.SetActive(true);
     }
 
-    if(Input.GetKeyDown(uplevel))
+    if(Input.GetKeyDown(uplevel) && zombieCount == 0)
     {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }

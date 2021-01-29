@@ -34,9 +34,7 @@ public class GameUI : MonoBehaviour
     if(GunMec.bulletCount == 0 || PlayerMovement.infected)
     {
       gameoverUI.SetActive(true);
-    }
-    
-    if(zombieCount == 0)
+    } else if(zombieCount == 0)
     {
       levelUp.SetActive(true);
     }

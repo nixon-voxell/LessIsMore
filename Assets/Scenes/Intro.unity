@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11764707, g: 0.9725491, b: 0.11764707, a: 1}
+  m_Color: {r: 0.9490197, g: 0.9960785, b: 0.37254903, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -266,8 +266,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291559106
-  m_fontColor: {r: 0.7607843, g: 0.99607843, b: 0.79607844, a: 1}
+    rgba: 4291543806
+  m_fontColor: {r: 0.99607843, g: 0.7607843, b: 0.79539126, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -537,9 +537,11 @@ MonoBehaviour:
   - YOU FOUND A LAB WHERE ALL REMAINING ZOMBIES ARE SITUATED...
   - BUT YOU ONLY HAVE 6 BULLETS IN YOUR REVOLVER. YOUR GUN IS STRONG ENOUGH TO PIERCE
     ALL ZOMBIES WITH JUST ONE BULLET...
-  - THE LAB HAS 6 LEVELS OF BASEMENT. THE  LOWER THE BASEMENT, THE HARDER LEVEL...
+  - THE LAB HAS 6 LEVELS OF BASEMENT. THE  LOWER THE BASEMENT, THE HARDER THE LEVEL...
   - THE ZOMBIES ARE HIGHLY INFECTIOUS. DO NOT HAVE ANY CONTACTS WITH THEM...
-  - USE ALL THE SIX BULLETS WISELY. GOOD LUCK !
+  - 'USE ALL THE SIX BULLETS WISELY. GOOD LUCK !
+
+    *PRO TIP: USE SPACE TO DASH!'
 --- !u!1 &423788613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11764707, g: 0.9725491, b: 0.11764707, a: 1}
+  m_Color: {r: 0.9490197, g: 0.9921569, b: 0.37254903, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1428,9 +1430,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1957547687}
+  - {fileID: 1984283460}
   - {fileID: 2098572951}
   - {fileID: 1404740319}
-  - {fileID: 1984283460}
   m_Father: {fileID: 108576270}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1639,8 +1641,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255360
-  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
+    rgba: 4294963276
+  m_fontColor: {r: 0.2971698, g: 0.9413238, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1757,7 +1759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11764707, g: 0.9725491, b: 0.11764707, a: 1}
+  m_Color: {r: 0.8431373, g: 0.6431373, b: 0.67058825, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1848,8 +1850,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291559106
-  m_fontColor: {r: 0.7607844, g: 0.9960785, b: 0.7960785, a: 1}
+    rgba: 4291555382
+  m_fontColor: {r: 0.21176472, g: 0.94117653, b: 0.7960785, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1966,7 +1968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11764707, g: 0.9725491, b: 0.11764707, a: 1}
+  m_Color: {r: 0.29411766, g: 0.94117653, b: 0.9960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2063,7 +2065,7 @@ RectTransform:
   - {fileID: 801545908}
   - {fileID: 1242836445}
   m_Father: {fileID: 722655426}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2692,8 +2694,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291559106
-  m_fontColor: {r: 0.7607843, g: 0.99607843, b: 0.79607844, a: 1}
+    rgba: 4284481266
+  m_fontColor: {r: 0.9490197, g: 0.9960785, b: 0.37254903, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2810,7 +2812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11764707, g: 0.9725491, b: 0.11764707, a: 1}
+  m_Color: {r: 0.21176472, g: 0.94117653, b: 0.7960785, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3148,8 +3150,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255384
+  m_fontColor: {r: 0.09451604, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3282,8 +3284,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255360
-  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
+    rgba: 4284481522
+  m_fontColor: {r: 0.9509197, g: 1, b: 0.3726415, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3416,8 +3418,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280021020
-  m_fontColor: {r: 0.10980393, g: 0.94117653, b: 0.10588236, a: 1}
+    rgba: 4291097788
+  m_fontColor: {r: 0.7372549, g: 0.9568628, b: 0.7686275, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3517,7 +3519,7 @@ RectTransform:
   - {fileID: 1945374692}
   - {fileID: 7984132}
   m_Father: {fileID: 722655426}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3961,7 +3963,7 @@ RectTransform:
   - {fileID: 1497991309}
   - {fileID: 1735296111}
   m_Father: {fileID: 722655426}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

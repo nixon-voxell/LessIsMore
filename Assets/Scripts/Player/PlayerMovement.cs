@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
   }
   public static bool danger = false;
   // Update is called once per frame
-  void Update()
+  void FixedUpdate()
   {
     Cursor.visible = false;
     if(GunMec.bulletCount > 0)

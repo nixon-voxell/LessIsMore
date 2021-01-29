@@ -2402,7 +2402,7 @@ PrefabInstance:
       objectReference: {fileID: 2029661957}
     - target: {fileID: 3806561768945794702, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
       propertyPath: movementMultiplier
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bed57aa99ba3bb43bedd7b252f80e09, type: 3}
@@ -3096,12 +3096,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 763886159}
-  MapcameraSize: 15
   realCamSize: 15
   offset: {x: 0, y: 0, z: -1}
   player: {fileID: 1378089368}
   camspeed: 0.1
-  mapPos: {x: -14, y: 3.8, z: -10}
+  delayTime: 2
 --- !u!1 &780156822
 GameObject:
   m_ObjectHideFlags: 0

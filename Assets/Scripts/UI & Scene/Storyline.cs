@@ -7,9 +7,11 @@ public class Storyline : MonoBehaviour
 {
   public TextMeshProUGUI text;
   public GameObject proceed;
-  public int lines;
   private string currentText;
   public float textAniDelay;
+
+  private bool skip;
+  public GameObject skipButton;
   int scriptNo;
   [TextArea(3,10)]
   public string[] storyLine;
@@ -25,6 +27,12 @@ public class Storyline : MonoBehaviour
   {
     StartCoroutine(TextAni());
   }
+
+  public void skipStory()
+  {
+    skip = true;
+    skipButton.SetActive(false);
+  }
   
   IEnumerator TextAni()
   {
@@ -32,21 +40,24 @@ public class Storyline : MonoBehaviour
     {
       currentText = storyLine[scriptNo].Substring(0,i);
       text.text = currentText;
-      yield return new WaitForSeconds(textAniDelay);
+      if (!skip) yield return new WaitForSeconds(textAniDelay);
     }
-    proceed.SetActive(true);
+    if(scriptNo >= storyLine.Length-1) proceed.SetActive(false);
+    else proceed.SetActive(true);
     PlayerSM.PlaySE("stop");
+    skip = false;
   }
   public void nextText()
   {
+    scriptNo ++;
+
+    skipButton.SetActive(true);
     PlayerSM.PlaySE("morsecode");
     proceed.SetActive(false);
-    scriptNo ++;
     StartCoroutine(TextAni());
-    if(scriptNo == lines) proceed.SetActive(false);
   }
 
-    public void GameOn()
+  public void GameOn()
   {
     PlayerSM.PlaySE("click");
     SceneManager.LoadScene("levlel 1");

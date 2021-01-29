@@ -61,4 +61,9 @@ public class PlayerMovement : MonoBehaviour
     }
   }
 
+  void OnDisable()
+  {
+    Cursor.visible = true;
+  }
+
 }

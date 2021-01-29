@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 9223046502602481426}
   - component: {fileID: 9223046502602481455}
   - component: {fileID: 6012084779029695882}
-  - component: {fileID: 2681664840513600457}
+  - component: {fileID: 4256687723166412421}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: bullet
@@ -209,7 +209,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 1fb9d708134e0ff4dbc00ce28629265f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -231,7 +231,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: d0e1cc68c5026db489c68541db358824, type: 3}
-  m_Color: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
+  m_Color: {r: 1, g: 0.7626084, b: 0.75, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -274,8 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a9308f99d5a454e9fad9096622026e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &2681664840513600457
-BoxCollider2D:
+--- !u!70 &4256687723166412421
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -287,16 +287,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.44, y: 0.14}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.47796226, y: 0.21637076}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.03317843, y: -0.0000002583053}
+  m_Size: {x: 0.5063593, y: 0.15416937}
+  m_Direction: 1

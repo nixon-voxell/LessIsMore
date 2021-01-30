@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
   void FixedUpdate()
   {
     Cursor.visible = false;
-    if(GunMec.bulletCount > 0)
+    if(!infected)
     {
       float horizontal = Input.GetAxis("Horizontal");
       float vertical = Input.GetAxis("Vertical");

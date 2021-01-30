@@ -31,7 +31,7 @@ public class GameUI : MonoBehaviour
       else bullet[i].enabled = false;
     }
 
-    if(GunMec.bulletCount == 0 || PlayerMovement.infected)
+    if(PlayerMovement.infected)
     {
       gameoverUI.SetActive(true);
     } else if(zombieCount == 0)

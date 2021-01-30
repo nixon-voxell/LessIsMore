@@ -41,9 +41,9 @@ public class EnemyMove : MonoBehaviour
       }else transform.eulerAngles = Vector3.zero;
 
       //zombies goes crazy when bulletCount is zero
-      if(GunMec.bulletCount < 0)
+      if(GunMec.bulletCount == 0)
       {
-        movespeed = 40;
+        movespeed = 10f;
       }
     } else animator.SetBool("Move", false);
 
